@@ -7,7 +7,7 @@
 }
 
 :root {
-    --timberwolf: #CDD2CF;
+    --timberwolf: #dee4e0;
     --ebony: #5d5e51;
     --special-white: #fbfdfd;
     --crayola-blue: #0374F5;
@@ -31,8 +31,7 @@ body {
 .logo,
 .credits {
     color: var(--special-white);
-    background: rgba(0, 0, 0, 0.6);
-    
+    background: rgba(0, 0, 0, 0.6);   
 }
 
 .logo {
@@ -61,30 +60,61 @@ a {
 .right-side {
     display: grid;
     grid-template-rows: 40% 30% 1fr;
-    background-color: var(--air-blue);
+    background-color: var(--timberwolf);
+    color: black;
 }
 
 .product-description {
     font-size: 28px;
     font-weight: bold;
-    padding: 10ch 10ch 0ch 4ch;
+    padding: 8ch 8ch 0ch 4ch;
 }
 
 .form {
     display: grid;
-    grid-template-rows: 10% 1fr;
-    background-color: var(--timberwolf);
+    grid-template-rows: 20% 1fr;
+    background-color: var(--air-blue);
+    padding-left: 56px;
+    box-shadow: 0px 5px 5px var(--crayola-blue);
 }
 
 form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2ch;
-    row-gap: 2ch;
-    padding: 2ch;
+    grid-template-columns: 400px 400px;
+    column-gap: 100px;
+    row-gap: 1ch;
+}
+
+input {
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+}
+
+input:focus {
+    background-color: var(--timberwolf);
+}
+
+input:invalid {
+    border: 2px solid red
 }
 
 .form-row {
     display: flex;
     flex-direction: column;
+}
+
+.submit {
+    padding-top: 24px;
+    padding-left: 56px;
+}
+
+button {
+    height: 60px;
+    width: 240px;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    background-color: var(--crayola-blue);
+    margin-bottom: 10px;
 }
