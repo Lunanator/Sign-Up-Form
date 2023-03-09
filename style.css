@@ -1,1 +1,57 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('./fonts/webfontkit-20230308-130027/norse-bold-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit-20230308-130027/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+body {
+    display: grid;
+    grid-template-columns: 712px 1fr;
+    height: 100vh;
+    margin: 0px;   
+}
+
+.image {
+    background-image: url(./assets/emiliano-vittoriosi-zXNxHhMXBE8-unsplash.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.transbox {
+    background-color: #000000;
+    opacity: 0.7;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 48px;   
+}
+
+.credits {
+    bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+legend {
+    float: left;
+}
+
+.right-side {
+    display: grid;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
