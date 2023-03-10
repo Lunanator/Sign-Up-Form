@@ -67,11 +67,11 @@ a {
 
 .slider {
     overflow: hidden;
-    
+    width: 100%;    
 }
 
 .slides {
-    width: 200%;
+    width: 300%;
     display: flex;
 }
 
@@ -80,7 +80,7 @@ a {
 }
 
 .product-description {
-    width: 50%;
+    width: 33.3%;
     font-size: 28px;
     font-weight: bold;
     padding: 8ch 8ch 0ch 4ch;
@@ -94,7 +94,11 @@ a {
 }
 
 #radio2:checked ~ .first {
-    margin-left: -60%;
+    margin-left: -40%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -79%;
 }
 
 .form {
