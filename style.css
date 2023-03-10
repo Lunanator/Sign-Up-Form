@@ -65,10 +65,36 @@ a {
     color: black;
 }
 
+.slider {
+    overflow: hidden;
+    
+}
+
+.slides {
+    width: 200%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
 .product-description {
+    width: 50%;
     font-size: 28px;
     font-weight: bold;
     padding: 8ch 8ch 0ch 4ch;
+    transition: 2s;
+}
+
+/*css for transition */
+
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -60%;
 }
 
 .form {
@@ -124,4 +150,8 @@ button {
     font-size: 24px;
     background-color: var(--crayola-blue);
     margin-bottom: 10px;
+}
+
+#message {
+    font-size: 12px;
 }

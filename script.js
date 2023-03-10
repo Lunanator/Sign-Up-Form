@@ -1,4 +1,3 @@
-
 const checkPassword = function() {
     if (document.getElementById('password').value ===
       document.getElementById('confirm-password').value) {
@@ -11,3 +10,13 @@ const checkPassword = function() {
         document.getElementById('message').innerHTML = 'not matching';
     }
 }
+
+let counter = 1;
+
+setInterval(function() {
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if (counter > 2) {
+        counter = 1;
+    }
+}, 5000);
