@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="image">
@@ -50,11 +51,17 @@
                         placeholder="********" 
                         pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$"
                         name="password" 
-                        type="password" />
+                        type="password" 
+                        onkeyup="checkPassword()" />
                     </div>
                     <div class="form-row">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input id="confirm-password" placeholder="********" name="confirm-password" type="password" />
+                        <input id="confirm-password" 
+                        placeholder="********"  
+                        name="confirm-password" 
+                        type="password" 
+                        onkeyup="checkPassword()" />
+                        <span id="message"></span>
                     </div>
             </form>
         </div>
