@@ -46,11 +46,15 @@
                     </div>
                     <div class="form-row">
                         <label for="password">PASSWORD</label>
-                        <input id="password" placeholder="******" name="password" type="password" />
+                        <input id="password" 
+                        placeholder="********" 
+                        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$"
+                        name="password" 
+                        type="password" />
                     </div>
                     <div class="form-row">
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input id="confirm-password" placeholder="******" name="confirm-password" type="password" />
+                        <input id="confirm-password" placeholder="********" name="confirm-password" type="password" />
                     </div>
             </form>
         </div>

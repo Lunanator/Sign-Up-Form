@@ -111,6 +111,11 @@ input:invalid {
     padding-left: 56px;
 }
 
+.submit a {
+    text-decoration: none;
+    color: var(--crayola-blue);
+}
+
 button {
     height: 60px;
     width: 240px;
