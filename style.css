@@ -119,12 +119,15 @@ form {
 input {
     border-radius: 4px;
     font-size: 16px;
-    border: none;
     padding: 8px;
+    border: none;
 }
 
 input:focus {
+    outline: none;
     background-color: var(--timberwolf);
+    border: 2px solid var(--crayola-blue);
+    margin: -2px;
 }
 
 input:invalid {
@@ -154,6 +157,10 @@ button {
     font-size: 24px;
     background-color: var(--crayola-blue);
     margin-bottom: 10px;
+}
+
+button:hover {
+    border: 2px solid black;
 }
 
 #message {
